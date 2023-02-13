@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "echo \"start build all package\"",
     "build": "npm run build:front && npm run build:back",
     "build:front": "npm run build -w frontend",
     "build:back": "npm run build -w backend",
@@ -15,9 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/kobakoba5884/todo-app.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["todo-app"],
+  "author": "mizuki",
   "license": "MIT",
+  "private": true,
   "bugs": {
     "url": "https://github.com/kobakoba5884/todo-app/issues"
   },
