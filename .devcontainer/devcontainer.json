@@ -1,0 +1,41 @@
+{
+  "name": "workspace",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "workspace",
+  "workspaceFolder": "/home/vscode/workspace",
+  "remoteUser": "vscode",
+  "shutdownAction": "stopCompose",
+  // https://github.com/redhat-developer/vscode-java/issues/1156
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.eol": "\n",
+        "editor.formatOnSave": true,
+        "files.autoSave": "afterDelay",
+        "java.import.exclusions": ["**/.docker"],
+        "thunder-client.saveToWorkspace": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // https://github.com/MicrosoftDocs/live-share/issues/3121
+        "liveshare.allowGuestDebugControl": true,
+        "liveshare.allowGuestTaskControl": true,
+        "liveshare.languages.allowGuestCommandControl": true,
+        "liveshare.publishWorkspaceInfo": true,
+        "liveshare.autoShareTerminals": true,
+        "liveshare.accessibility.accessibilityFeaturesEnabled": "off",
+        "liveshare.accessibility.soundsEnabled": false,
+        "liveshare.accessibility.voiceEnabled": false
+      },
+      "extensions": [
+        "rangav.vscode-thunder-client",
+        "ms-vsliveshare.vsliveshare",
+        "ms-vscode.live-server",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint",
+        "mongodb.mongodb-vscode",
+        "Swellaby.node-pack",
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  }
+}
