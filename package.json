@@ -16,7 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/kobakoba5884/todo-app.git"
   },
-  "keywords": ["todo-app"],
+  "keywords": [
+    "todo-app"
+  ],
   "author": "mizuki",
   "license": "MIT",
   "private": true,
@@ -26,5 +28,9 @@
   "homepage": "https://github.com/kobakoba5884/todo-app#readme",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "eslint-config-prettier": "8.6.0",
+    "prettier": "2.8.4"
+  }
 }
