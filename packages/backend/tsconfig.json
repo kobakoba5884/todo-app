@@ -9,5 +9,8 @@
     "strict": true,
     "skipLibCheck": true,
     "moduleResolution": "NodeNext"
+  },
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules"]
   }
 }

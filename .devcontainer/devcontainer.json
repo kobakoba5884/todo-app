@@ -26,16 +26,18 @@
         "liveshare.accessibility.voiceEnabled": false
       },
       "extensions": [
-        "rangav.vscode-thunder-client",
-        "ms-vsliveshare.vsliveshare",
-        "ms-vscode.live-server",
-        "esbenp.prettier-vscode",
-        "streetsidesoftware.code-spell-checker",
-        "dbaeumer.vscode-eslint",
-        "mongodb.mongodb-vscode",
-        "Swellaby.node-pack",
-        "GitHub.vscode-pull-request-github"
-      ]
+		"rangav.vscode-thunder-client",
+		"ms-vsliveshare.vsliveshare",
+		"ms-vscode.live-server",
+		"esbenp.prettier-vscode",
+		"streetsidesoftware.code-spell-checker",
+		"dbaeumer.vscode-eslint",
+		"mongodb.mongodb-vscode",
+		"Swellaby.node-pack",
+		"GitHub.vscode-pull-request-github",
+		"kumar-harsh.graphql-for-vscode",
+		"eamodio.gitlens"
+	]
     }
   }
 }
