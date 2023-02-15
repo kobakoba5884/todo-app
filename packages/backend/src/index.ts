@@ -66,4 +66,4 @@ main().catch((err) => {
   process.exit(1)
 })
 
-// console.log('hello world')
+console.log('hello world')
