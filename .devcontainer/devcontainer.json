@@ -37,7 +37,7 @@
         "GitHub.vscode-pull-request-github",
         "eamodio.gitlens",
         "kumar-harsh.graphql-for-vscode"
-	    ]
+      ]
     }
   }
 }
