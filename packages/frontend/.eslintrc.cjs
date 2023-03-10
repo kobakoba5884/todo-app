@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   env: {
     browser: true,
@@ -16,10 +15,12 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    // eslint-disable-next-line no-undef
     tsconfigRootDir: __dirname,
     project: ['tsconfig.eslint.json'],
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {},
+  ignorePatters: [
+    
+  ]
 }
