@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# https://gist.github.com/linhmtran168/2286aeafe747e78f53bf
+echo "lint start"
+
+ESLINT="$(git rev-parse --show-toplevel)/node_modules/.bin/eslint"
+
+if [ ! -x $ESLINT ]; then
+  echo "Please install ESlint (npm i --save --save-exact --dev eslint)"
+  exit 1
+fi
+
+npm run lint
+
+if [ $? -eq 0 ]; then
+  echo "COMMIT SUCCEEDED"
+else
+  echo "Your commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again."
+  exit 1
+fi
+
+exit $?
