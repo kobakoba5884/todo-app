@@ -34,8 +34,10 @@
         "dbaeumer.vscode-eslint",
         "mongodb.mongodb-vscode",
         "Swellaby.node-pack",
-        "GitHub.vscode-pull-request-github"
-      ]
+        "GitHub.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "kumar-harsh.graphql-for-vscode"
+	    ]
     }
   }
 }
