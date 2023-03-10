@@ -31,8 +31,10 @@ RUN apt-get update \
 
 # https://github.com/devcontainers/cli/issues/98
 # change to main branch https://dev-yakuza.posstree.com/git/default-branch/
+# https://blog.jp.square-enix.com/iteng-blog/posts/00009-git-pre-commit/
 RUN su ${USER_NAME} --command \
-    'sudo git config --system --add safe.directory "/home/${USER_NAME}/workspace"'
+    'git config --system --add safe.directory "/home/${USER_NAME}/workspace" \
+    && git config --global core.hooksPath .githooks'
 
 # ---------------------------------- set up language ----------------------------------
 # setup locale https://stackoverflow.com/a/55077451/13723015
