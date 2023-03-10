@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # https://gist.github.com/linhmtran168/2286aeafe747e78f53bf
 echo "lint start"
 
@@ -10,8 +9,6 @@ if [ ! -x $ESLINT ]; then
   echo "Please install ESlint (npm i --save --save-exact --dev eslint)"
   exit 1
 fi
-
-PASS=true
 
 npm run lint
 
