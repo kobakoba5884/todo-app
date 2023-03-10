@@ -6,6 +6,9 @@
   "scripts": {
     "prebuild": "echo \"start build all package\"",
     "build": "npm run build:front && npm run build:back",
+    "lint": "npm run lint:front && npm run lint:back",
+    "lint:back": "npm run lint -w backend",
+    "lint:front": "npm run lint -w frontend",
     "build:front": "npm run build -w frontend",
     "build:back": "npm run build -w backend",
     "watch:back": "npm run watch -w backend",
